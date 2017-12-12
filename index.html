@@ -1,0 +1,26 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+.hide{
+display:none;}
+</style>
+
+<script>
+$(document).ready(function(){
+    $("li").hover(function(){
+        $('.hide').css("display", "block");    		
+        });
+		$("li").mouseout(function(){
+   $('.hide').css("display", "none");
+});
+});
+</script>
+</head>
+<body>
+<li>Hello1</li>
+<li class="hide">Hello2</li>
+<li class="hide">Hello3</li>
+<li class="hide">Hello4</li>
+</body>
+</html>
